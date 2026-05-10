@@ -1,0 +1,18 @@
+﻿<Page x:Class="UsersMvcApp.Views.HomeScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="HomeScreen">
+
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Список користувачів"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="0 0 0 20" />
+
+            <ListBox x:Name="UsersListBox"
+                     Height="300"
+                     DisplayMemberPath="DisplayInfo" />
+        </StackPanel>
+    </Grid>
+</Page>
